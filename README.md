@@ -15,3 +15,6 @@
 > Matplotlib was then used to produce 6 figures to display this information.
 
 > The programme is executed every morning (UK) where I can swiftly assess the daily rate of change of price and volume relative to proprietary ranges. This visual snapshot enables me to quickly add to or cover positions.
+
+![Plot Examples](https://user-images.githubusercontent.com/72507931/99261656-e9173000-2814-11eb-82e4-7d956bcb6e74.JPG)
+
