@@ -55,9 +55,10 @@ The user is able to gain a visual insight into the rate of change of price movem
 
 # Screenshot
 
-White = price data
-Green = low end range
-Red = top end range
+- White = price data
+- Green (dashed) = low end range
+- Red (dashed) = top end range
+- Green (solid) = volume
 
 ![Plot Example](https://user-images.githubusercontent.com/72507931/99262415-dcdfa280-2815-11eb-8ab6-244a77a2d8f2.JPG)
 
