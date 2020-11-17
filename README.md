@@ -12,10 +12,10 @@ The purpose of the project was to clearly present up-to-date financial market in
 - Editor Used: PyCharm
 
 - Libraries:
-    > Yfinance
-    > Datetime
-    > MatPlotLib
-    > Pandas
+    - Yfinance
+    - Datetime
+    - MatPlotLib
+    - Pandas
 
 
 ## Setup
@@ -25,12 +25,12 @@ The excel file containing the ranges is required to be stored on the user’s di
 
 ## Walkthrough
 
-Time Clamp:
+<b>Time Clamp:</b>
 
 A final time point is defined using ‘timedelta’ and ‘strftime’. This enables the user to access up-to-date data whenever the program is executed.
 
 
-Dataframe:
+<b>Dataframe:</b>
 
 Daily closing prices (in addition to trading volume) from several asset classes are extracted using yfinance and are placed into a dataframe. Pre-existing price ranges (based on price/volume/volatility of the asset) are accessed from an excel file using pandas. 
 All data-frames are then joined so as to create a single data-frame with the following columns:
@@ -39,15 +39,15 @@ All data-frames are then joined so as to create a single data-frame with the fol
 3.	Live closing price
 4.	Top end range
 
-Instruments:
+<b>Instruments:</b>
 
 Six financial instruments are defined using the ‘riskranges’ function. Yfinance requires specific ticker codes which are used in the ‘ticker’ argument.
 
-Volume Data:
+<b>Volume Data:</b>
 
 Due to limited access with volume data, there are only 2 instruments that are used for this function (‘SV/DAV’ objects). Volume data is not always provided for certain futures/options based indices (i.e. VIX volatility index).
 
-Plots:
+<b>Plots:</b>
 
 The plots are derived using MatPlotLib (line charts). Two functions (‘graphwithvolume’ and ‘graph’) are used to display 6 figures, 4 of which are single plots and 2 of which are dual plots (including price and volume). 
 The user is able to gain a visual insight into the rate of change of price movements and the relationship of this with the dynamic ranges provided. This is used to aid investing/trading decision making.
